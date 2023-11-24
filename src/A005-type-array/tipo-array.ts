@@ -12,6 +12,10 @@ export function maiusculo(...args: string[]): string[] {
   return args.map((valor) => valor.toUpperCase());
 }
 
+//para não poder editar elementos deste array
+const array: ReadonlyArray<string> = ['Matheus', 'Marina'];
+const array2: readonly string[] = ['teste1', 'teste2'];
+
 const resultss = multiplicar(1, 2, 3);
 const concatenado = concatenar('opa', ' eita');
 const allCaps = maiusculo('opa', 'eita');
@@ -19,3 +23,5 @@ const allCaps = maiusculo('opa', 'eita');
 console.log(resultss);
 console.log(concatenado);
 console.log(allCaps);
+console.log(array);
+console.log(array2);
